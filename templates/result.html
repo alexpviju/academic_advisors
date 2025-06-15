@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Advice Result</title>
+</head>
+<body>
+    <h2>Hello {{ name }}, here is your SWOT analysis and career advice:</h2>
+
+    <h3>Strengths</h3>
+    <ul>
+        {% for item in swot.strengths %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+
+    <h3>Weaknesses</h3>
+    <ul>
+        {% for item in swot.weaknesses %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+
+    <h3>Opportunities</h3>
+    <ul>
+        {% for item in swot.opportunities %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+
+    <h3>Threats</h3>
+    <ul>
+        {% for item in swot.threats %}<li>{{ item }}</li>{% endfor %}
+    </ul>
+
+    <h3>Career Advice</h3>
+    <p>{{ advice }}</p>
+
+    <br><br>
+    <a href="/">Back to Form</a>
+</body>
+</html>
