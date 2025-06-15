@@ -20,7 +20,6 @@ This project is a web application that performs a **SWOT analysis** (Strengths, 
 - Hugging Face Transformers
 - HTML/CSS
 - dotenv
-- TensorFlow (optional if using compatible model)
 
 ---
 
@@ -40,13 +39,8 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### 3. Install Dependencies
 
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Set Up Environment Variables
+### 3. Set Up Environment Variables
 
 Create a `.env` file in the root directory and add your Hugging Face API key:
 
@@ -54,7 +48,7 @@ Create a `.env` file in the root directory and add your Hugging Face API key:
 HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_key_here
 ```
 
-### 5. Run the Application
+### 4. Run the Application
 
 ```bash
 python app.py
@@ -75,7 +69,6 @@ Access the web app at: `http://127.0.0.1:5000`
 │   ├── index.html         # User input form
 │   └── result.html        # Output SWOT + advice
 ├── .env                   # API Key (not to be shared)
-├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 ```
 
@@ -95,14 +88,6 @@ Output:
 
 ---
 
-## ✅ To Do (Suggestions)
-
-- Add session tracking to handle multiple users
-- Save SWOT and advice to a database or CSV
-- Add model selection dropdown (OpenAI / Hugging Face)
-- Deploy to a cloud platform (e.g., Heroku, Render)
-
----
 
 ## 📬 Contact
 
@@ -111,7 +96,3 @@ For questions or suggestions, feel free to reach out:
 📧 alexpviju26@gmail.com
 
 ---
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
